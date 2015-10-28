@@ -1,0 +1,49 @@
+/**
+ * RP3 Light theme for reveal.js. This is the opposite of the 'RP3 Dark' theme.
+ *
+ * Tracy Rotton (trotton@rp3agency.com)
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/roboto/roboto.css);
+@import url(../../lib/font/lato/lato.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #2b2b2b url("./grid-bg-dark.gif");
+
+$mainColor: #e5e5e5;
+$headingColor: #e5e5e5;
+
+$mainFontSize: 38px;
+$mainFont: 'Lato', sans-serif;
+$headingFont: 'Roboto', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #00bbe3;
+$linkColorHover: #fe57a1;
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

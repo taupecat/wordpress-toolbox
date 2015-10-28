@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WordPress Bootcamp</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/rp3-light.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section id="title">
+					<h1>Addendum</h1>
+				</section>
+
+				<section>
+
+					<section>
+
+						<h2>Where to get help</h2>
+
+						<ul>
+							<li><a href="https://wordpress.org/support/">Support Forums</a></li>
+							<li><a href="http://codex.wordpress.org/">Codex</a></li>
+							<li><a href="https://developer.wordpress.org/">Developer Guide</a></li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>More help</h2>
+
+						<ul>
+							<li><a href="http://www.meetup.com/wordpressdc/">Meetups</a></li>
+							<li><a href="https://central.wordcamp.org/">WordCamps</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Training</h2>
+
+						<ul>
+							<li><a href="https://teamtreehouse.com/tracks/learn-wordpress">Treehouse</a></li>
+							<li><a href="http://www.wpbeginner.com/">WPBeginner</a></li>
+							<li><a href="http://www.lynda.com/Web-training-tutorials/88-0.html?category=wordpress_330">Lynda.com</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>News</h2>
+
+						<ul>
+							<li><a href="http://wptavern.com/">WP Tavern</a></li>
+							<li><a href="http://torquemag.io/">Torque</a></li>
+							<li><a href="https://poststatus.com/">Post Status</a></li>
+						</ul>
+					</section>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
