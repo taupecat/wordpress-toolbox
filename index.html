@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>WordPress Bootcamp</title>
+		<title>WordCamp US 2015: The Modern Web Developer's Toolbox</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/rp3-light.css" id="theme">
+		<link rel="stylesheet" href="css/theme/rp3-dark.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,8 +42,18 @@
 			<div class="slides">
 
 				<section id="title">
-					<h1>Lesson 2</h1>
-					<h2>Establishing a Professional Development Environment</h2>
+					<h2>The Modern WordPress Developer's Toolbox</h2>
+				</section>
+
+				<section>
+					<h2>Tracy Rotton</h2>
+					<ul>
+						<li><a href="http://twitter.com/taupecat">@taupecat</a></li>
+						<li>Front-End Architect for<br>
+							<a href="https://rp3agency.com">RP3 Agency</a> in Bethesda, Maryland</li>
+					</ul>
+
+					<img src="images/logo-white.svg" style="border: none; background: none; display: block; margin: 1em auto 0; width: 20%; height: auto;">
 				</section>
 
 				<section id="most-interesting">
@@ -102,6 +112,17 @@
 						</ul>
 
 					</section>
+
+					<section>
+
+						<figure>
+							<img src="http://imgs.xkcd.com/comics/git.png" title="If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything.">
+							<figcaption><a href="http://xkcd.com/1597/">XKCD.com/1597</a></figcaption>
+						</figure>
+
+					</section>
+
+				</section>
 
 				</section>
 
@@ -276,100 +297,12 @@
 
 				</section>
 
-				<section>
-
-					<section>
-
-						<h2>Installing Your WordPress Environment</h2>
-
-					</section>
-
-					<section>
-
-						<h3>Download Prerequisites</h3>
-
-						<ul>
-							<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></li>
-							<li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
-							<li><a href="https://www.sourcetreeapp.com/">SourceTree</a><br/>
-							<small>(if you don't already have git)</small></li>
-						</ul>
-
-						<p>&nbsp;</p>
-
-						<h4>Bonus for Windows Users</h4>
-						<ul>
-							<li><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a></li>
-						</ul>
-
-					</section>
-
-					<section>
-						<h3>Get the Archive</h3>
-
-						<code>git&nbsp;clone&nbsp;https://github.com/taupecat/VVV.git</code>
-					</section>
-
-					<section>
-						<h3>Vagrant Up!</h3>
-
-						<p><code>cd VVV<br/>vagrant up</code></p>
-					</section>
-
-					<section>
-						<h3>SSH</h3>
-
-						<p><code>vagrant ssh</code></p>
-					</section>
-
-					<section>
-						<h3>Install Composer Packages (Plugins)</h3>
-
-						<p><code>cd /vagrant<br/>composer install</code></p>
-					</section>
-
-					<section>
-						<h3>Install Node Modules</h3>
-
-						<p><code>npm install</code></p>
-					</section>
-
-					<section>
-						<h3>Activate Our Plugins</h3>
-
-						<p><code>cd www/wordpress-default<br/>wp plugin activate --all</code></p>
-					</section>
-
-					<section>
-						<h3>Install Our Starter Theme</h3>
-
-						<p><code>wp&nbsp;scaffold&nbsp;_s&nbsp;[theme-slug]&nbsp;\<br/>--theme_name="[Theme&nbsp;Name]"&nbsp;--sassify</code></p>
-					</section>
-
-					<section>
-						<h3>Activate Our Theme</h3>
-
-						<p><code>wp&nbsp;theme&nbsp;activate&nbsp;[theme-name]</code></p>
-					</section>
-
-					<section>
-						<h3>Import Theme Unit Test</h3>
-
-						<p><code><small>wp&nbsp;import&nbsp;../../theme-unit-test-data.xml&nbsp;--authors=skip</small></code></p>
-					</section>
-
-					<section>
-						<h3>Customize wp-config.php</h3>
-					</section>
-
-				</section>
-
 			</div>
 
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="js/reveal.min.js"></script>
 
 		<script>
 
