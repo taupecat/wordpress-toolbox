@@ -47,3 +47,13 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+
+/**
+ * Get rid of border & background on images
+ */
+
+.reveal section img {
+	border: none;
+	background: none;
+}
