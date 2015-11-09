@@ -293,3 +293,6 @@ body {
   border: none;
   background: none;
   box-shadow: none; }
+
+.reveal iframe {
+  display: inline-block !important; }
