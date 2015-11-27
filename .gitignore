@@ -1,7 +1,8 @@
 .DS_Store
 .svn
 log/*.log
-tmp/**
-node_modules/
+tmp
+node_modules
 .sass-cache
 bower_components
+vvv
