@@ -1,0 +1,27 @@
+{
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://wpackagist.org"  
+		},
+		{
+			"type": "composer",
+			"url": "https://packagist.org"
+		}
+	],
+	"require": {
+		"johnpbloch/wordpress": "*",
+		"wpackagist-plugin/jetpack": "*",
+		"wpackagist-plugin/akismet": "*",
+		"wpackagist-plugin/show-template": "*",
+		"wpackagist-plugin/debug-bar": "*",
+		"wpackagist-plugin/wordpress-importer": "*",
+		"wpackagist-plugin/wp-migrate-db": "*",
+		"wpackagist-plugin/theme-check": "*"
+	},
+	"extra": {
+		"installer-paths": {
+			"wordpress/wp-content/plugins/{$name}": ["type:wordpress-plugin"]
+		}
+	}
+}
